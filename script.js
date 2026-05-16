@@ -93,7 +93,7 @@ const gameList = [
     },
     {
         title: "Tribals.io Survival",
-        url: "https://tribals.io/",
+        url: "https://webecomewhatwebehold.online/tribalsio.embed",
         img: "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/a70806db5d8812ac66118f99dc8e590c/tribals-io-logo.png"
     },
     {
@@ -193,7 +193,7 @@ const gameList = [
     },
     {
         title: "Undead Invasion",
-        url: "https://kartbrosio.com/undead-invasion.embed",
+        url: "https://azgames.io/undead-invasion.embed",
         img: "https://spacewavesgame.io/data/image/game/undead-invasion.png"
     },
     {
