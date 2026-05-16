@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>P00p3yn0w G4mes</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>p00p3yn0w G4mes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+<canvas id="backgroundCanvas"></canvas>
+
+<!-- LOADING SCREEN -->
+<div id="loadingScreen">
+
+    <canvas id="loadingCanvas"></canvas>
+
+    <div class="loader-box">
+        <div class="spinner"></div>
+        <h1>🎮 Loading P00p3yn0w G4mes 🎮</h1>
+        <p id="loadingText">Loading something...</p>
+    </div>
+
+</div>
+
+<!-- BACKGROUND FX -->
+
+
+<div id="galaxyOverlay"></div>
+
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+
+<!-- HOME SCREEN -->
+<div id="homeScreen">
+
+<header>
+    <img
+        src="https://i.imgur.com/4MBE9Uq.png"
+        alt="P00p3yn0w G4mes"
+        class="logo"
+    >
+</header>
+
+<div class="container">
+
+    <input type="text" id="searchBar" placeholder="Search for a game...">
+  
+ <h2>🔥 Hot Right Now!🔥</h2>
+  
+<!-- FEATURED SECTION -->
+<div class="featured-grid">
+
+    <!-- BIG FEATURED -->
+    <div class="featured-main"
+    onclick="launchFeaturedGame()">
+
+        <img id="featuredImage">
+
+        <div class="featured-overlay">
+
+            <h2 id="featuredTitle"></h2>
+
+            <div class="featured-progress">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SIDE GAMES -->
+    <div class="featured-side">
+
+        <div class="small-game"
+        onclick="launchGame('Tetris','https://djblue.github.io/tetris/')">
+
+            <img src="https://www.datocms-assets.com/145957/1744284280-tetris-mobile.png?auto=format&fit=max&w=1200">
+
+            <h3>Tetris</h3>
+
+        </div>
+
+        <div class="small-game"
+        onclick="launchGame('Escape Road','https://escaperoadx.github.io/escaperoad/index.html')">
+
+            <img src="https://imgs.crazygames.com/escape-road-asm_16x9/20250724105031/escape-road-asm_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop">
+
+            <h3>Escape Road</h3>
+
+        </div>
+
+        <div class="small-game"
+        onclick="launchGame('Bitlife','https://htmlxm.github.io/h/bitlife/')">
+
+            <img src="https://goodgamestudios.com/wp-content/uploads/2022/11/BitLife-INT-1920.jpg">
+
+            <h3>BitLife</h3>
+
+        </div>
+
+        <div class="small-game"
+        onclick="launchGame('Drive Mad','https://lnahtml.github.io/a77/drive-mad')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2NS_4WY5JvUojX_6UYjGknVXP3hR91n4AdQ&s">
+
+            <h3>Drive Mad</h3>
+
+        </div>
+
+    </div>
+
+</div>
+  
+ <h2>All Games</h2>
+  
+    <div class="games">
+      
+       <!-- LEVEL DEVIL -->
+        <div class="game"
+        onclick="launchGame('Level Devil','https://html5.gamedistribution.com/3ffc5c0944f54f06afb212ca7d80bb00/?gd_sdk_referrer_url=https://leveldevil-game.io/level-devil')">
+
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3242750/header.jpg?t=1774446792">
+
+            <h3>Level Devil</h3>
+
+        </div>
+
+        <!-- TETRIS -->
+        <div class="game"
+        onclick="launchGame('Tetris','https://djblue.github.io/tetris/')">
+
+            <img src="https://www.datocms-assets.com/145957/1744284280-tetris-mobile.png?auto=format&fit=max&w=1200">
+
+            <h3>Tetris</h3>
+
+        </div>
+      
+      <!-- ESCAPE ROAD -->
+        <div class="game"
+        onclick="launchGame('Escape Road','https://escaperoadx.github.io/escaperoad/index.html')">
+
+            <img src="https://imgs.crazygames.com/escape-road-asm_16x9/20250724105031/escape-road-asm_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop">
+
+            <h3>Escape Road</h3>
+
+        </div>
+
+        <!-- SNAKE -->
+        <div class="game"
+        onclick="launchGame('Snake','https://snake-game.io/')">
+
+            <img src="https://static.boredpanda.com/blog/wp-content/uploads/2026/04/google-year-of-the-snake-game-how-to-master-the-retro-doodle-and-beat-your-high-score_wide-WideImage_16-9-69d66e6724e84.jpg">
+
+            <h3>Snake</h3>
+
+        </div>
+      
+       <!-- SLIME RANCHERS -->
+        <div class="game"
+        onclick="launchGame('Slime Ranchers','https://math.canvas-lms.22web.org/stuff/selfhosted/slimerancher/index.html')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUD36Mp4jIJGOf059IgcH6LPBEYErgji_YqemuGBSRY6Wc-qAWYUZUazb85LKcpv4-VphDFQ&s=10">
+
+            <h3>Slime Ranchers</h3>
+
+        </div>
+
+        <!-- 2048 -->
+        <div class="game"
+        onclick="launchGame('2048','https://zv1y2i8p.play.gamezop.com/g/NyM_JGWcx')">
+
+            <img src="https://www.coolmathgames.com/sites/default/files/2048_OG-logo.jpg">
+
+            <h3>2048</h3>
+
+        </div>
+      
+      <!-- DUCK LIFE 4 -->
+        <div class="game"
+        onclick="launchGame('Duck Life 4','https://ducklife.online/duck-life-4.embed')">
+
+            <img src="https://www.coolmathgames.com/sites/default/files/DuckLife4_OG-logo.jpg">
+
+            <h3>Duck Life 4</h3>
+
+        </div>
+
+        <!-- PACMAN -->
+        <div class="game"
+        onclick="launchGame('Pac-Man','https://freepacman.org/')">
+
+            <img src="https://i0.wp.com/gamingrespawn.com/wp-content/uploads/2021/04/Pac-Man.png?fit=960%2C720&ssl=1">
+
+            <h3>Pac-Man</h3>
+
+        </div>
+      
+         <!-- A GUN IN TIME -->
+        <div class="game"
+        onclick="launchGame('A Gun in Time','https://ubg66ez.gitlab.io/a-gun-in-time/')">
+
+            <img src="https://gamemedia.armorgames.com/17944/icn_heroimage.png">
+
+            <h3>A Gun in Time</h3>
+
+        </div>
+
+        <!-- SMASH CARTS -->
+        <div class="game"
+        onclick="launchGame('Smash Carts','https://smashkarts.io')">
+
+            <img src="https://imgs.crazygames.com/smash-karts_16x9/20260210123937/smash-karts_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop">
+
+            <h3>Smash Carts</h3>
+
+        </div>
+      
+        <!-- MOVIES -->
+        <div class="game"
+        onclick="launchGame('Movies','https://www.1flex.org/')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSle7Ty3fYukSEb34PF8XdLKCt_Y_9O9vN-JQ&s">
+
+            <h3>Movies</h3>
+        </div>
+      
+        <!-- Stickman Combat -->
+        <div class="game"
+        onclick="launchGame('Stickman Kombat 2D','https://html5.gamedistribution.com/6d3928f393774157a7aed692f08ee011/?gd_sdk_referrer_url=https://geometry-games.io/stick-kombat-2d')">
+
+            <img src="https://imgs.crazygames.com/stickman-kombat-2d_16x9/20250826034901/stickman-kombat-2d_16x9-cover?metadata=none&quality=60&height=5424">
+
+            <h3>Stickman Kombat 2D</h3>
+
+          
+        </div>
+
+        <!-- FLAPPY BIRD -->
+        <div class="game"
+        onclick="launchGame('Flappy Bird','https://flappybird.io/')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVNHw_JRhuDtsjBBoajXcgMjM1X6Q0S5crEA&s">
+
+            <h3>Flappy Bird</h3>
+
+        </div>
+
+        <!-- CROSSY ROAD -->
+        <div class="game"
+        onclick="launchGame('Crossy Road','https://blooket.study/storage/Crossy%20Road.html')">
+
+            <img src="https://static1.squarespace.com/static/5cedd5e7c6e7df0001bbb67c/t/675b681dbe3e687a57ff005c/1734043683478/CrossyRoad_Banner.png?format=1500w">
+
+            <h3>Crossy Road</h3>
+
+        </div>
+      
+      <!-- 2V2.IO -->
+        <div class="game"
+        onclick="launchGame('2v2.io','https://2v2.io/')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj6zBM2zHQAm1n08LfeNg-wfQ9tlBGxjBKtw&s">
+
+            <h3>2v2.io</h3>
+
+        </div>
+      
+         <!-- STRIKER DUMMIES -->
+        <div class="game"
+        onclick="launchGame('Striker Dummies','https://23azostore.github.io/s3/striker-dummies/')">
+
+            <img src="https://img.gamedistribution.com/5395ef221e064277b8d8d7a6ba0496c9-512x340.jpeg">
+
+            <h3>Striker Dummies</h3>
+
+        </div>
+
+        <!-- GEOMETRY DASH -->
+        <div class="game"
+        onclick="launchGame('Geometry Dash','https://geometrylitepc.io/geo-dash-lite-pc.embed')">
+
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/322170/capsule_616x353.jpg?t=1775300400">
+
+            <h3>Geometry Dash</h3>
+
+        </div>
+      
+      <!-- RAFT -->
+        <div class="game"
+        onclick="launchGame('Raft','https://blooket.study/storage/Raft.html')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSFqcr2j13ttx6euqDNDh8PebcLlPlTiL1w&s">
+
+            <h3>Raft</h3>
+
+        </div>
+
+        <!-- EAGLERCRAFT -->
+        <div class="game"
+        onclick="launchGame('Eaglercraft','https://geometrylitepc.io/minecraft.embed')">
+
+            <img src="https://dashmetry.com/cache/data/image/game/eaglercraft/eaglercraft-m320x180.webp">
+
+            <h3>Eaglercraft</h3>
+
+        </div>
+
+        <!-- DRIVE MAD -->
+        <div class="game"
+        onclick="launchGame('Drive Mad','https://lnahtml.github.io/a77/drive-mad/')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2NS_4WY5JvUojX_6UYjGknVXP3hR91n4AdQ&s">
+
+            <h3>Drive Mad</h3>
+
+        </div>
+      
+      <!-- SUPERHOT -->
+        <div class="game"
+        onclick="launchGame('SuperHot','https://math.canvas-lms.22web.org/stuff/selfhosted/super-hot/')">
+
+            <img src="https://m.media-amazon.com/images/M/MV5BYzk1NjM5MjktN2YzMC00YzcyLWFjNTEtM2IzNDE3NmIxZGQ4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+
+            <h3>SuperHot</h3>
+
+        </div>
+      
+       <!-- Subway Surfers -->
+        <div class="game"
+        onclick="launchGame('Subway Surfers','https://geometrylitepc.io/subway-surfers.embed')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBCxKnhHPqpBAVI38ilfSP97Z1b3F9dG2L2g&s">
+
+            <h3>Subway Surfers</h3>
+
+        </div>
+      
+      <!-- MAZEAN.COM -->
+        <div class="game"
+        onclick="launchGame('Mazean.com','https://mazean.com/')">
+
+            <img src="https://mazean.com/data/512x512.png">
+
+            <h3>Mazean.com</h3>
+
+        </div>
+      
+      <!-- REDCOATS -->
+        <div class="game"
+        onclick="launchGame('Redcoats.io','https://redcoats.io/app')">
+
+            <img src="https://images.twoplayergames.org/files/games/other/redcoast-io.jpg?auto=format&w=200">
+
+            <h3>Redcoats.io</h3>
+
+        </div>
+      
+      <!-- SHIPS 3D -->
+        <div class="game"
+        onclick="launchGame('Ships 3D','https://yp3d.com/ships3d/')">
+
+            <img src="https://cdn.webgamer.io/games/ships-3d/ships-3d.480x.85pc.webp">
+
+            <h3>Ships 3D</h3>
+
+        </div>
+      
+      <!-- Roblox -->
+        <div class="game"
+        onclick="launchGame('Roblox','https://geometrylitepc.io/subway-surfers')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU3PVRE_vleIyipQnw-7O8KiVVHHFbNTdCQA&s">
+
+            <h3>Roblox</h3>
+
+        </div>
+
+        <!-- BITLIFE -->
+        <div class="game"
+        onclick="launchGame('Bitlife','https://htmlxm.github.io/h/bitlife/')">
+
+            <img src="https://goodgamestudios.com/wp-content/uploads/2022/11/BitLife-INT-1920.jpg">
+
+            <h3>BitLife</h3>
+
+        </div>
+      
+      <!-- Five Nights at EPSTEINS -->
+        <div class="game"
+        onclick="launchGame('Five Nights at Epsieins','https://blooket.study/storage/fivenightsatepsteins.html')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvC4-T7DxsMwAiF72GYp0W4EIWuOj_zISHxQ&s">
+
+            <h3>Five Nights at Epstein's</h3>
+
+        </div>
+      
+         <!-- BUILDNOW GG -->
+        <div class="game"
+        onclick="launchGame('BuildNow GG','https://soulpeacemind.com/games/buildnow-gg-gpotty/')">
+
+            <img src="https://geometrylitegame.io/data/image/game/buildnow-gg/buildnow-gg.webp">
+
+            <h3>BuildNow GG</h3>
+
+        </div>
+      
+      <!-- Doors Online -->
+        <div class="game"
+        onclick="launchGame('Doors Online','https://www.miniplay.com/embed/doors-and-rooms')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhioYp-yAGwAYP_oJQXLkwm_S7JUcp_xhRA&s">
+
+            <h3>Doors Online</h3>
+
+        </div>
+
+        <!-- TAG -->
+        <div class="game"
+        onclick="launchGame('Tag','https://htmlxm.github.io/h3/tag/')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqnv5dEDOurGtf2ftRLZDASTNMHsTCh8eDhg&s">
+
+            <h3>Tag</h3>
+
+        </div>
+      
+ <!-- CAPYBARA CLICKER -->
+        <div class="game"
+        onclick="launchGame('Capybara Clicker','https://capybaragame.io/capybara-clicker.embed/')">
+
+            <img src="https://capybaragame.io/data/image/options/capybara-clicker.png">
+
+            <h3>Capybara Clicker</h3>
+
+        </div>
+      
+<!-- SPACE WAVES -->
+        <div class="game"
+        onclick="launchGame('Space Waves','https://spacewavesgame.io/game/space-waves/')">
+
+            <img src="https://i.ytimg.com/vi/0L885f9nUI8/maxresdefault.jpg">
+
+            <h3>Space Waves</h3>
+
+        </div>
+
+        <!-- GETAWAY SHOOTOUT -->
+        <div class="game"
+        onclick="launchGame('Getaway Shootout','https://23azostore.github.io/s4/getaway-shootout/')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpOVz0LRKVNo_3OO0672CJgY-7nJR9Jn3Zzw&s">
+
+            <h3>Getaway Shootout</h3>
+
+        </div>
+
+        <!-- 8 BALL POOL -->
+        <div class="game"
+        onclick="launchGame('8 Ball Pool','https://sudoku-online.github.io/a8/8-ball-pool/')">
+
+            <img src="https://imgs.crazygames.com/8-ball-pool-wyr_16x9/20251027031134/8-ball-pool-wyr_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop">
+
+            <h3>8 Ball Pool</h3>
+
+        </div>
+      
+      <!-- TRIBALS.IO SURVIVAL -->
+        <div class="game"
+        onclick="launchGame('Tribals.io Survival','https://tribals.io/')">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBB8firkDMG_RMdIW3Lj3su7II24zjtWQH-w&s">
+
+            <h3>Tribals.io Survival</h3>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<!-- PLAYER SCREEN -->
+<div id="playerScreen">
+
+<header>
+  <img
+        src="https://i.imgur.com/4MBE9Uq.png"
+        alt="P00p3yn0w G4mes Logo"
+        class="logo"
+    >
+</header>
+
+<div class="player-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar">
+
+        <h2>Other Games</h2>
+
+        <div class="mini-games" id="miniGames">
+
+            <button onclick="launchGame('Tetris','https://djblue.github.io/tetris/')">
+                Tetris
+            </button>
+
+            <button onclick="launchGame('Snake','https://snake-game.io/')">
+                Snake
+            </button>
+
+            <button onclick="launchGame('Pac-Man','https://freepacman.org/')">
+                Pac-Man
+            </button>
+
+            <button onclick="launchGame('2048','https://zv1y2i8p.play.gamezop.com/g/NyM_JGWcx')">
+                2048
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- CENTER -->
+    <main class="center-player">
+
+        <div class="top-controls">
+
+            <div class="game-title" id="gameTitle">
+                Game
+            </div>
+
+            <div class="buttons">
+
+    <button class="icon-btn"
+    onclick="fullscreenGame()">
+        ⛶
+    </button>
+
+    <button class="icon-btn popout-btn"
+    onclick="openBlankCloak()">
+        ↗
+    </button>
+
+    <button class="icon-btn close-btn"
+    onclick="goHome()">
+        ✕
+    </button>
+
+</div>
+
+        </div>
+
+        <!-- GAME -->
+        <div class="game-frame-wrapper">
+
+            <iframe id="gameFrame"></iframe>
+
+        </div>
+
+        <!-- BOTTOM AD -->
+        <div class="bottom-ad">
+            Ad Space
+        </div>
+
+    </main>
+
+    <!-- RIGHT AD -->
+    <aside class="right-ad">
+        Ad Space
+    </aside>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<h3>Made by Gnarly, like Gnarly Dude Bro yay</h3>  
+  
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
