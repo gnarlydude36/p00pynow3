@@ -204,7 +204,7 @@ const gameList = [
     {
         title: "Golf Orbit",
         url: "https://7e0r297sgk0j0.h5games.usercontent.goog/v/1976bdao4gtf0/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&eids=95322736%2C95336219&features=GameRendering__enforce_csp%2CGameRendering__support_offline_feature%2CInterstitialFreqCap__freq_cap_60s%2CMonetization__run_slotcar_ads_in_game_center#pc=592873959890527&preStart=1778894837170&enable-backend-update-score=true",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU3PVRE_vleIyipQnw-7O8KiVVHHFbNTdCQA&s"
+        img: "https://www.onlinegames.io/media/posts/953/Golf-Orbit-Play-Online.jpg"
     },
     {
         title: "Capybara Clicker",
