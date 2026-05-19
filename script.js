@@ -77,6 +77,11 @@ const gameList = [
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSle7Ty3fYukSEb34PF8XdLKCt_Y_9O9vN-JQ&s"
     },
     {
+        title: "Dead Zone: Quarantine Protocol",
+        url: "https://yandex.com/games/app/dead-zone-quarantine-protocol-436821?utm_source=distrib&skip-guard=1&header=no&utm_medium=hollowknight.io&flags=%7B"adv_sticky_banner_disabled"%3Atrue%7D",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlqo5IpEY2pLUqj9GV0oL2TCjRtFNqTgANLg&s"
+    },
+    {
         title: "Redcoats.io",
         url: "https://redcoats.io/app",
         img: "https://images.twoplayergames.org/files/games/other/redcoast-io.jpg?auto=format&w=200"
