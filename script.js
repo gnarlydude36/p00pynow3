@@ -73,7 +73,7 @@ const gameList = [
     },
     {
         title: "Movies",
-        url: "https://www.1flex.org/",
+        url: "https://freeonlinek.top/movies/",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSle7Ty3fYukSEb34PF8XdLKCt_Y_9O9vN-JQ&s"
     },
   {
