@@ -82,11 +82,6 @@ const gameList = [
         img: "https://images.twoplayergames.org/files/games/other/redcoast-io.jpg?auto=format&w=200"
     },
     {
-        title: "Dead Zone: Quarantine Protocol",
-        url: "https://yandex.com/games/app/dead-zone-quarantine-protocol-436821?utm_source=distrib&skip-guard=1&header=no&utm_medium=hollowknight.io&flags=%7B"adv_sticky_banner_disabled"%3Atrue%7D",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlqo5IpEY2pLUqj9GV0oL2TCjRtFNqTgANLg&s"
-    },
-    {
         title: "Ships 3D",
         url: "https://yp3d.com/ships3d/",
         img: "https://imgs.crazygames.com/games/ships-3d/cover_1x1-1732704910713.png?format=auto&quality=100&metadata=none&width=1200"
