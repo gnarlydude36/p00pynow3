@@ -172,6 +172,11 @@ const gameList = [
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpOVz0LRKVNo_3OO0672CJgY-7nJR9Jn3Zzw&s"
     },
     {
+        title: "Gladihoppers",
+        url: "https://gladihoppersgames.com/loader1.php?id=45550",
+        img: "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/c4158282ee354873ed29da8852457eb5/gladihoppers-logo.png"
+    },
+    {
         title: "Space Waves",
         url: "https://spacewavesgame.io/game/space-waves/",
         img: "https://i.ytimg.com/vi/0L885f9nUI8/maxresdefault.jpg"
