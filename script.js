@@ -251,6 +251,11 @@ searchBar.addEventListener("keyup", () => {
 
 function launchGame(title, url) {renderMiniGames(title);
 
+    sideMenu.classList.remove("open");
+
+document.querySelector(".content-layout")
+    .style.display = "none";
+
     document.getElementById("homeScreen")
         .style.display = "none";
 
@@ -269,6 +274,9 @@ function launchGame(title, url) {renderMiniGames(title);
 
 function goHome() {
 
+    document.querySelector(".content-layout")
+    .style.display = "flex";
+    
     document.getElementById("playerScreen")
         .style.display = "none";
 
@@ -669,6 +677,18 @@ setInterval(() => {
 
 updateFeaturedGame();
 
+/*side toggle*/
+const sideMenu =
+    document.getElementById("sideMenu");
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+menuToggle.addEventListener("click", () => {
+
+    sideMenu.classList.toggle("open");
+
+});
 
 /******************************
  * INTERACTIVE LOADING STARS
