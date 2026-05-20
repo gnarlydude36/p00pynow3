@@ -51,6 +51,78 @@ body {
     z-index: -5;
 }
 
+/* CONTENT LAYOUT */
+
+.content-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* SIDEBAR */
+
+#sideMenu {
+    width: 0;
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition:
+        width 0.35s ease,
+        opacity 0.25s ease;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(12px);
+
+    flex-shrink: 0;
+}
+
+/* OPEN STATE */
+
+#sideMenu.open {
+    width: 220px;
+    opacity: 1;
+    padding: 20px;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* MENU BUTTON */
+
+#menuToggle {
+    margin-bottom: 20px;
+
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+#menuToggle:hover {
+    background: #00ffe1;
+    color: black;
+}
+
 /* GALAXY */
 #galaxyOverlay {
     position: fixed;
