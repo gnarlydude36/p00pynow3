@@ -543,7 +543,7 @@ header {
 
     display: grid;
 
-    grid-template-columns: 1fr 340px;
+    grid-template-columns: minmax(0, 1fr) 320px;
 
     gap: 20px;
 
@@ -551,17 +551,19 @@ header {
 
     align-items: stretch;
 }
-
 /* =========================
    BIG FEATURED
 ========================= */
 
 .featured-main {
-    flex: 2.4;
+    position: relative;
+
+    width: 100%;
 
     height: 420px;
 
-    position: relative;
+    min-height: 420px;
+    max-height: 420px;
 
     overflow: hidden;
 
@@ -574,8 +576,11 @@ header {
     border: 1px solid rgba(255,255,255,0.08);
 }
 
+/* FORCE IMAGE SIZE */
+
 .featured-main img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -638,39 +643,40 @@ header {
 }
 
 /* =========================
-   SIDE ICONS
+   SIDE GAMES
 ========================= */
 
 .featured-side {
-    flex: 1;
-
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
+    grid-template-rows: 1fr 1fr;
+
     gap: 16px;
 
     height: 420px;
+
+    min-height: 420px;
+    max-height: 420px;
 }
 
 /* SIDE GAME CARDS */
 
+
+/* SMALL GAME */
+
 .small-game {
+    overflow: hidden;
+
+    border-radius: 18px;
+
     background: rgba(255,255,255,0.05);
 
     border: 1px solid rgba(255,255,255,0.08);
 
-    border-radius: 18px;
-
-    overflow: hidden;
-
-    cursor: pointer;
-
-    transition: 0.25s;
-
-    backdrop-filter: blur(12px);
-
     display: flex;
+
     flex-direction: column;
 
     height: 100%;
@@ -687,11 +693,11 @@ header {
 .small-game img {
     width: 100%;
 
-    height: 140px;
+    height: 130px;
 
     object-fit: cover;
 
-    display: block;
+    flex-shrink: 0;
 }
 
 /* TITLE */
