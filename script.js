@@ -686,7 +686,7 @@ const menuToggle =
 
 menuToggle.addEventListener("click", () => {
 
-    sideMenu.classList.toggle("open");
+    sideMenu.classList.toggle("closed");
 
 });
 
