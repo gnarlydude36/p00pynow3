@@ -251,36 +251,47 @@ searchBar.addEventListener("keyup", () => {
 
 function launchGame(title, url) {
 
-    console.log("Launching:", title);
+    console.log("GAME CLICKED");
 
-    renderMiniGames(title);
-
-    const home =
+    const homeScreen =
         document.getElementById("homeScreen");
 
-    const player =
+    const playerScreen =
         document.getElementById("playerScreen");
 
     const frame =
         document.getElementById("gameFrame");
 
-    const titleBox =
+    const titleText =
         document.getElementById("gameTitle");
 
-    if (!home || !player || !frame) {
-        console.error("Missing elements!");
+    if (!homeScreen) {
+        console.error("homeScreen missing");
         return;
     }
 
-    home.style.display = "none";
+    if (!playerScreen) {
+        console.error("playerScreen missing");
+        return;
+    }
 
-    player.style.display = "block";
+    if (!frame) {
+        console.error("gameFrame missing");
+        return;
+    }
+
+    renderMiniGames(title);
+
+    homeScreen.style.display = "none";
+
+    playerScreen.style.display = "block";
 
     frame.src = url;
 
-    titleBox.textContent = title;
-}
+    titleText.textContent = title;
 
+    console.log("Game loaded");
+}
 // RETURN HOME
 
 function goHome() {
