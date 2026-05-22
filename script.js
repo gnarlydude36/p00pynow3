@@ -251,7 +251,7 @@ searchBar.addEventListener("keyup", () => {
 
 function launchGame(title, url) {renderMiniGames(title);
 
-    sideMenu.classList.remove("open");
+    sideMenu.classList.add("closed");
 
 document.querySelector(".content-layout")
     .style.display = "none";
@@ -680,6 +680,9 @@ updateFeaturedGame();
 /*side toggle*/
 const sideMenu =
     document.getElementById("sideMenu");
+
+/* START CLOSED */
+sideMenu.classList.add("closed");
 
 const menuToggle =
     document.getElementById("menuToggle");
