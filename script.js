@@ -32,15 +32,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
         loadingScreen.style.opacity = "0";
 
-        let loadingActive = true;
-
         setTimeout(() => {
-
-    loadingActive = false;
-
-    loadingScreen.remove();
-
-}, 800);
+            loadingScreen.remove(); // stronger than display:none
+        }, 800);
 
     }, loadTime);
 
@@ -255,49 +249,22 @@ searchBar.addEventListener("keyup", () => {
 
 // GAME LAUNCH
 
-function launchGame(title, url) {
+function launchGame(title, url) {renderMiniGames(title);
 
-    console.log("GAME CLICKED");
+    document.getElementById("homeScreen")
+        .style.display = "none";
 
-    const homeScreen =
-        document.getElementById("homeScreen");
+    document.getElementById("playerScreen")
+        .style.display = "block";
 
-    const playerScreen =
-        document.getElementById("playerScreen");
+    document.getElementById("gameFrame")
+        .src = url;
 
-    const frame =
-        document.getElementById("gameFrame");
+    document.getElementById("gameTitle")
+        .textContent = title;
 
-    const titleText =
-        document.getElementById("gameTitle");
-
-    if (!homeScreen) {
-        console.error("homeScreen missing");
-        return;
-    }
-
-    if (!playerScreen) {
-        console.error("playerScreen missing");
-        return;
-    }
-
-    if (!frame) {
-        console.error("gameFrame missing");
-        return;
-    }
-
-    renderMiniGames(title);
-
-    homeScreen.style.display = "none";
-
-    playerScreen.style.display = "block";
-
-    frame.src = url;
-
-    titleText.textContent = title;
-
-    console.log("Game loaded");
 }
+
 // RETURN HOME
 
 function goHome() {
@@ -308,8 +275,6 @@ function goHome() {
     document.getElementById("homeScreen")
         .style.display = "block";
 
-    // stop game when leaving
-    document.getElementById("gameFrame").src = "";
 }
 
 // FULLSCREEN
@@ -704,21 +669,6 @@ setInterval(() => {
 
 updateFeaturedGame();
 
-/*side toggle*/
-const sideMenu =
-    document.getElementById("sideMenu");
-
-/* START CLOSED */
-sideMenu.classList.add("closed");
-
-const menuToggle =
-    document.getElementById("menuToggle");
-
-menuToggle.addEventListener("click", () => {
-
-    sideMenu.classList.toggle("closed");
-
-});
 
 /******************************
  * INTERACTIVE LOADING STARS
@@ -1053,9 +1003,7 @@ function tickLoading() {
 
   }
 
- if (loadingActive) {
-    requestAnimationFrame(tickLoading);
-}
+  requestAnimationFrame(tickLoading);
 
 }
 
