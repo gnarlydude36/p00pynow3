@@ -80,17 +80,28 @@ body {
 
     padding: 24px;
 
-    transition: 0.3s ease;
-
     overflow: hidden;
+
+    transition:
+        width 0.3s ease,
+        min-width 0.3s ease,
+        padding 0.3s ease,
+        opacity 0.2s ease;
 }
+
+/* CLOSED STATE */
 
 #sideMenu.closed {
-    width: 80px;
-    min-width: 80px;
-    padding: 24px 16px;
-}
+    width: 0;
+    min-width: 0;
 
+    padding-left: 0;
+    padding-right: 0;
+
+    border: none;
+
+    opacity: 0;
+}
 #sideMenu h3 {
     font-size: 34px;
     color: white;
