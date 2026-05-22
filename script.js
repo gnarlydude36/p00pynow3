@@ -249,34 +249,44 @@ searchBar.addEventListener("keyup", () => {
 
 // GAME LAUNCH
 
-function launchGame(title, url) {renderMiniGames(title);
+function launchGame(title, url) {
 
-    sideMenu.classList.add("closed");
+    // close sidebar safely
+    const sideMenu = document.getElementById("sideMenu");
 
-    document.getElementById("homeScreen")
-        .style.display = "none";
+    if (sideMenu) {
+        sideMenu.classList.add("closed");
+    }
 
-    document.getElementById("playerScreen")
-        .style.display = "block";
+    // random side games
+    renderMiniGames(title);
 
-    document.getElementById("gameFrame")
-        .src = url;
+    // switch screens
+    document.getElementById("homeScreen").style.display = "none";
 
-    document.getElementById("gameTitle")
-        .textContent = title;
+    document.getElementById("playerScreen").style.display = "block";
 
+    // load game
+    const frame = document.getElementById("gameFrame");
+
+    frame.src = url;
+
+    // title
+    document.getElementById("gameTitle").textContent = title;
 }
 
 // RETURN HOME
 
 function goHome() {
-    
+
     document.getElementById("playerScreen")
         .style.display = "none";
 
     document.getElementById("homeScreen")
         .style.display = "block";
 
+    // stop game when leaving
+    document.getElementById("gameFrame").src = "";
 }
 
 // FULLSCREEN
