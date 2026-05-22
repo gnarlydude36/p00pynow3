@@ -32,9 +32,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
         loadingScreen.style.opacity = "0";
 
+        let loadingActive = true;
+
         setTimeout(() => {
-            loadingScreen.remove(); // stronger than display:none
-        }, 800);
+
+    loadingActive = false;
+
+    loadingScreen.remove();
+
+}, 800);
 
     }, loadTime);
 
@@ -1047,7 +1053,9 @@ function tickLoading() {
 
   }
 
-  requestAnimationFrame(tickLoading);
+ if (loadingActive) {
+    requestAnimationFrame(tickLoading);
+}
 
 }
 
