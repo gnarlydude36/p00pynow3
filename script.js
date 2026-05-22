@@ -253,9 +253,6 @@ function launchGame(title, url) {renderMiniGames(title);
 
     sideMenu.classList.add("closed");
 
-document.querySelector(".content-layout")
-    .style.display = "none";
-
     document.getElementById("homeScreen")
         .style.display = "none";
 
@@ -273,9 +270,6 @@ document.querySelector(".content-layout")
 // RETURN HOME
 
 function goHome() {
-
-    document.querySelector(".content-layout")
-    .style.display = "flex";
     
     document.getElementById("playerScreen")
         .style.display = "none";
