@@ -67,6 +67,16 @@ const gameList = [
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSFqcr2j13ttx6euqDNDh8PebcLlPlTiL1w&s"
     },
     {
+        title: "Rail in The Air",
+        url: "https://gamulo.com/wp-content/uploads/2025/game/Rail-in-the-Air.html",
+        img: "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/0ac52582b500eefc23b6df0e0d35cfe8/rail-in-the-air-logo.png"
+    },
+    {
+        title: "Watermelon Merge",
+        url: "https://bitlifeonline.github.io/watermelon-drop/",
+        img: "https://suikagame.io/data/image/posts/suikagame-banner1.jpg"
+    },
+    {
         title: "Stickman Kombat 2D",
         url: "https://html5.gamedistribution.com/6d3928f393774157a7aed692f08ee011/?gd_sdk_referrer_url=https://geometry-games.io/stick-kombat-2d",
         img: "https://imgs.crazygames.com/stickman-kombat-2d_16x9/20250826034901/stickman-kombat-2d_16x9-cover?metadata=none&quality=60&height=5424"
