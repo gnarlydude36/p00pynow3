@@ -225,6 +225,12 @@ const gameList = [
 
 //search?
 
+const searchBar =
+    document.getElementById("searchBar");
+
+const games =
+    document.querySelectorAll(".game");
+
 function filterGames() {
 
     const text =
