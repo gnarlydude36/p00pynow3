@@ -669,3 +669,30 @@ header {
     }
 
 }
+
+.category-bar{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.category-btn{
+    padding:10px 18px;
+    border:none;
+    border-radius:12px;
+    background:#222;
+    color:white;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.category-btn:hover{
+    background:#00ffe1;
+    color:black;
+}
+
+.category-btn.active{
+    background:#00ffe1;
+    color:black;
+}
