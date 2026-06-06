@@ -58,6 +58,42 @@
 <div class="container">
 
     <input type="text" id="searchBar" placeholder="Search for a game...">
+
+  <div class="category-bar">
+
+    <button class="category-btn active" data-category="all">
+        All
+    </button>
+
+    <button class="category-btn" data-category="action">
+        Action
+    </button>
+
+    <button class="category-btn" data-category="racing">
+        Racing
+    </button>
+
+    <button class="category-btn" data-category="survival">
+        Survival
+    </button>
+
+    <button class="category-btn" data-category="puzzle">
+        Puzzle
+    </button>
+
+    <button class="category-btn" data-category="shooter">
+        Shooter
+    </button>
+
+    <button class="category-btn" data-category="skill">
+        Skill
+    </button>
+
+    <button class="category-btn" data-category="sports">
+        Sports
+    </button>
+
+</div>
   
  <h2>🔥 Hot Right Now!🔥</h2>
   
@@ -133,7 +169,8 @@
     <div class="games">
       
        <!-- LEVEL DEVIL -->
-        <div class="game"
+       <div class="game"
+         data-category="skill"
         onclick="launchGame('Level Devil','https://html5.gamedistribution.com/3ffc5c0944f54f06afb212ca7d80bb00/?gd_sdk_referrer_url=https://leveldevil-game.io/level-devil')">
 
             <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3242750/header.jpg?t=1774446792">
@@ -144,6 +181,7 @@
 
         <!-- TETRIS -->
         <div class="game"
+          data-category="puzzle"
         onclick="launchGame('Tetris','https://djblue.github.io/tetris/')">
 
             <img src="https://www.datocms-assets.com/145957/1744284280-tetris-mobile.png?auto=format&fit=max&w=1200">
@@ -154,6 +192,7 @@
       
       <!-- ESCAPE ROAD -->
         <div class="game"
+          data-category="racing"
         onclick="launchGame('Escape Road','https://escaperoadx.github.io/escaperoad/index.html')">
 
             <img src="https://imgs.crazygames.com/escape-road-asm_16x9/20250724105031/escape-road-asm_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop">
@@ -164,6 +203,7 @@
 
         <!-- SNAKE -->
         <div class="game"
+          data-category="skill"
         onclick="launchGame('Snake','https://snake-game.io/')">
 
             <img src="https://static.boredpanda.com/blog/wp-content/uploads/2026/04/google-year-of-the-snake-game-how-to-master-the-retro-doodle-and-beat-your-high-score_wide-WideImage_16-9-69d66e6724e84.jpg">
@@ -174,6 +214,7 @@
       
        <!-- SLIME RANCHERS -->
         <div class="game"
+          data-category="survival"
         onclick="launchGame('Slime Ranchers','https://math.canvas-lms.22web.org/stuff/selfhosted/slimerancher/index.html')">
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUD36Mp4jIJGOf059IgcH6LPBEYErgji_YqemuGBSRY6Wc-qAWYUZUazb85LKcpv4-VphDFQ&s=10">
@@ -184,6 +225,7 @@
 
         <!-- 2048 -->
         <div class="game"
+          data-category="puzzle"
         onclick="launchGame('2048','https://zv1y2i8p.play.gamezop.com/g/NyM_JGWcx')">
 
             <img src="https://www.coolmathgames.com/sites/default/files/2048_OG-logo.jpg">
@@ -194,6 +236,7 @@
 
        <!-- rail in the air -->
         <div class="game"
+          data-category="skill"
         onclick="launchGame('Rail in The Air','https://gamulo.com/wp-content/uploads/2025/game/Rail-in-the-Air.html')">
 
             <img src="https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/0ac52582b500eefc23b6df0e0d35cfe8/rail-in-the-air-logo.png">
@@ -204,6 +247,7 @@
       
       <!-- DUCK LIFE 4 -->
         <div class="game"
+          data-category="action"
         onclick="launchGame('Duck Life 4','https://ducklife.online/duck-life-4.embed')">
 
             <img src="https://www.coolmathgames.com/sites/default/files/DuckLife4_OG-logo.jpg">
@@ -214,6 +258,7 @@
 
        <!-- Gladihoppers -->
         <div class="game"
+          data-category="action"
         onclick="launchGame('Gladihoppers','https://gladihoppersgames.com/loader1.php?id=45550')">
 
             <img src="https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/c4158282ee354873ed29da8852457eb5/gladihoppers-logo.png">
@@ -224,6 +269,7 @@
 
         <!-- PACMAN -->
         <div class="game"
+          data-category="survival"
         onclick="launchGame('Pac-Man','https://freepacman.org/')">
 
             <img src="https://i0.wp.com/gamingrespawn.com/wp-content/uploads/2021/04/Pac-Man.png?fit=960%2C720&ssl=1">
@@ -234,6 +280,7 @@
 
       <!-- DEAD ZONE QUARANTINE PROTOCOL -->
         <div class="game"
+          data-category="skill"
         onclick="launchGame('Dead Zone: Quarantine Protocol','https://yandex.com/games/app/dead-zone-quarantine-protocol-436821?utm_source=distrib&skip-guard=1&header=no&utm_medium=hollowknight.io&flags=%7B"adv_sticky_banner_disabled"%3Atrue%7D')">
 
             <img src="https://playgama.com/cdn-cgi/imagedelivery/LN2S-4p3-GgZvEx3IPaKUA/ab69f999-4093-4be2-6f55-7dd3f6fc6900/thumb">
@@ -244,6 +291,7 @@
       
          <!-- A GUN IN TIME -->
         <div class="game"
+          data-category="shooter"
         onclick="launchGame('A Gun in Time','https://ubg66ez.gitlab.io/a-gun-in-time/')">
 
             <img src="https://gamemedia.armorgames.com/17944/icn_heroimage.png">
@@ -254,6 +302,7 @@
 
       <!-- WaterMelon Merge -->
         <div class="game"
+          data-category="puzzle"
         onclick="launchGame('Watermelon Merge','https://bitlifeonline.github.io/watermelon-drop/')">
 
             <img src="https://suikagame.io/data/image/posts/suikagame-banner1.jpg">
@@ -264,6 +313,7 @@
 
         <!-- SMASH CARTS -->
         <div class="game"
+          data-category="racing"
         onclick="launchGame('Smash Carts','https://smashkarts.io')">
 
             <img src="https://imgs.crazygames.com/smash-karts_16x9/20260210123937/smash-karts_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop">
@@ -272,17 +322,9 @@
 
         </div>
       
-        <!-- MOVIES -->
-        <div class="game"
-        onclick="launchGame('Movies','https://streamex.sh/')">
-
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSle7Ty3fYukSEb34PF8XdLKCt_Y_9O9vN-JQ&s">
-
-            <h3>Movies</h3>
-        </div>
-      
         <!-- Stickman Combat -->
         <div class="game"
+          data-category="action"
         onclick="launchGame('Stickman Kombat 2D','https://html5.gamedistribution.com/6d3928f393774157a7aed692f08ee011/?gd_sdk_referrer_url=https://geometry-games.io/stick-kombat-2d')">
 
             <img src="https://imgs.crazygames.com/stickman-kombat-2d_16x9/20250826034901/stickman-kombat-2d_16x9-cover?metadata=none&quality=60&height=5424">
@@ -294,6 +336,7 @@
 
         <!-- FLAPPY BIRD -->
         <div class="game"
+          data-category="puzzle"
         onclick="launchGame('Flappy Bird','https://flappybird.io/')">
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVNHw_JRhuDtsjBBoajXcgMjM1X6Q0S5crEA&s">
@@ -304,6 +347,7 @@
 
         <!-- CROSSY ROAD -->
         <div class="game"
+          data-category="puzzle"
         onclick="launchGame('Crossy Road','https://blooket.study/storage/Crossy%20Road.html')">
 
             <img src="https://static1.squarespace.com/static/5cedd5e7c6e7df0001bbb67c/t/675b681dbe3e687a57ff005c/1734043683478/CrossyRoad_Banner.png?format=1500w">
@@ -314,6 +358,7 @@
       
       <!-- 2V2.IO -->
         <div class="game"
+          data-category="shooter"
         onclick="launchGame('2v2.io','https://2v2.io/')">
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj6zBM2zHQAm1n08LfeNg-wfQ9tlBGxjBKtw&s">
@@ -324,6 +369,7 @@
       
          <!-- STRIKER DUMMIES -->
         <div class="game"
+          data-category="action"
         onclick="launchGame('Striker Dummies','https://23azostore.github.io/s3/striker-dummies/')">
 
             <img src="https://img.gamedistribution.com/5395ef221e064277b8d8d7a6ba0496c9-512x340.jpeg">
@@ -334,6 +380,7 @@
 
         <!-- GEOMETRY DASH -->
         <div class="game"
+          data-category="skill"
         onclick="launchGame('Geometry Dash','https://geometrylitepc.io/geo-dash-lite-pc.embed')">
 
             <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/322170/capsule_616x353.jpg?t=1775300400">
@@ -344,6 +391,7 @@
       
       <!-- RAFT -->
         <div class="game"
+          data-category="survival"
         onclick="launchGame('Raft','https://blooket.study/storage/Raft.html')">
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSFqcr2j13ttx6euqDNDh8PebcLlPlTiL1w&s">
@@ -354,6 +402,7 @@
 
         <!-- EAGLERCRAFT -->
         <div class="game"
+          data-category="survival"
         onclick="launchGame('Eaglercraft','https://geometrylitepc.io/minecraft.embed')">
 
             <img src="https://dashmetry.com/cache/data/image/game/eaglercraft/eaglercraft-m320x180.webp">
@@ -364,6 +413,7 @@
 
         <!-- DRIVE MAD -->
         <div class="game"
+          data-category="racing"
         onclick="launchGame('Drive Mad','https://lnahtml.github.io/a77/drive-mad/')">
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2NS_4WY5JvUojX_6UYjGknVXP3hR91n4AdQ&s">
@@ -374,6 +424,7 @@
       
       <!-- SUPERHOT -->
         <div class="game"
+          data-category="shooter"
         onclick="launchGame('SuperHot','https://math.canvas-lms.22web.org/stuff/selfhosted/super-hot/')">
 
             <img src="https://m.media-amazon.com/images/M/MV5BYzk1NjM5MjktN2YzMC00YzcyLWFjNTEtM2IzNDE3NmIxZGQ4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
@@ -384,6 +435,7 @@
       
        <!-- Subway Surfers -->
         <div class="game"
+          data-category="skill"
         onclick="launchGame('Subway Surfers','https://geometrylitepc.io/subway-surfers.embed')">
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBCxKnhHPqpBAVI38ilfSP97Z1b3F9dG2L2g&s">
@@ -394,6 +446,7 @@
       
       <!-- MAZEAN.COM -->
         <div class="game"
+          data-category="shooter"
         onclick="launchGame('Mazean.com','https://mazean.com/')">
 
             <img src="https://mazean.com/data/512x512.png">
@@ -404,6 +457,7 @@
       
       <!-- REDCOATS -->
         <div class="game"
+          data-category="shooter"
         onclick="launchGame('Redcoats.io','https://redcoats.io/app')">
 
             <img src="https://images.twoplayergames.org/files/games/other/redcoast-io.jpg?auto=format&w=200">
@@ -414,6 +468,7 @@
       
       <!-- SHIPS 3D -->
         <div class="game"
+          data-category="shooter"
         onclick="launchGame('Ships 3D','https://yp3d.com/ships3d/')">
 
             <img src="https://cdn.webgamer.io/games/ships-3d/ships-3d.480x.85pc.webp">
@@ -424,6 +479,7 @@
       
       <!-- GOLF ORBIT -->
         <div class="game"
+          data-category="sports"
         onclick="launchGame('Golf Orbit','https://7e0r297sgk0j0.h5games.usercontent.goog/v/1976bdao4gtf0/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=gamesnacks&userActivityMetrics=true&eids=95322736%2C95336219&features=GameRendering__enforce_csp%2CGameRendering__support_offline_feature%2CInterstitialFreqCap__freq_cap_60s%2CMonetization__run_slotcar_ads_in_game_center#pc=592873959890527&preStart=1778894837170&enable-backend-update-score=true')">
 
             <img src="https://www.onlinegames.io/media/posts/953/Golf-Orbit-Play-Online.jpg">
@@ -434,6 +490,7 @@
 
         <!-- BITLIFE -->
         <div class="game"
+          data-category="skill"
         onclick="launchGame('Bitlife','https://htmlxm.github.io/h/bitlife/')">
 
             <img src="https://goodgamestudios.com/wp-content/uploads/2022/11/BitLife-INT-1920.jpg">
@@ -444,6 +501,7 @@
       
       <!-- Five Nights at EPSTEINS -->
         <div class="game"
+          data-category="skill"
         onclick="launchGame('Five Nights at Epsieins','https://blooket.study/storage/fivenightsatepsteins.html')">
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvC4-T7DxsMwAiF72GYp0W4EIWuOj_zISHxQ&s">
@@ -454,6 +512,7 @@
       
          <!-- BUILDNOW GG -->
         <div class="game"
+          data-category="shooter"
         onclick="launchGame('BuildNow GG','https://soulpeacemind.com/games/buildnow-gg-gpotty/')">
 
             <img src="https://geometrylitegame.io/data/image/game/buildnow-gg/buildnow-gg.webp">
@@ -464,6 +523,7 @@
       
       <!-- UNDEAD INVASION -->
         <div class="game"
+          data-category="shooter"
         onclick="launchGame('Undead Invasion','https://azgames.io/undead-invasion.embed')">
 
             <img src="https://spacewavesgame.io/data/image/game/undead-invasion.png">
@@ -474,6 +534,7 @@
 
         <!-- TAG -->
         <div class="game"
+          data-category="action"
         onclick="launchGame('Tag','https://htmlxm.github.io/h3/tag/')">
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqnv5dEDOurGtf2ftRLZDASTNMHsTCh8eDhg&s">
@@ -484,6 +545,7 @@
       
  <!-- CAPYBARA CLICKER -->
         <div class="game"
+          data-category="action"
         onclick="launchGame('Capybara Clicker','https://capybaragame.io/capybara-clicker.embed/')">
 
             <img src="https://capybaragame.io/data/image/options/capybara-clicker.png">
@@ -494,6 +556,7 @@
       
 <!-- SPACE WAVES -->
         <div class="game"
+          data-category="skill"
         onclick="launchGame('Space Waves','https://spacewavesgame.io/game/space-waves/')">
 
             <img src="https://i.ytimg.com/vi/0L885f9nUI8/maxresdefault.jpg">
@@ -504,6 +567,7 @@
 
         <!-- GETAWAY SHOOTOUT -->
         <div class="game"
+          data-category="shooter"
         onclick="launchGame('Getaway Shootout','https://23azostore.github.io/s4/getaway-shootout/')">
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpOVz0LRKVNo_3OO0672CJgY-7nJR9Jn3Zzw&s">
@@ -514,6 +578,7 @@
 
         <!-- 8 BALL POOL -->
         <div class="game"
+          data-category="sports"
         onclick="launchGame('8 Ball Pool','https://sudoku-online.github.io/a8/8-ball-pool/')">
 
             <img src="https://imgs.crazygames.com/8-ball-pool-wyr_16x9/20251027031134/8-ball-pool-wyr_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop">
@@ -524,6 +589,7 @@
       
       <!-- TRIBALS.IO SURVIVAL -->
         <div class="game"
+          data-category="survival"
         onclick="launchGame('Tribals.io Survival','https://webecomewhatwebehold.online/tribalsio.embed')">
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBB8firkDMG_RMdIW3Lj3su7II24zjtWQH-w&s">
