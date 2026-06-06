@@ -82,11 +82,6 @@ const gameList = [
         img: "https://imgs.crazygames.com/stickman-kombat-2d_16x9/20250826034901/stickman-kombat-2d_16x9-cover?metadata=none&quality=60&height=5424"
     },
     {
-        title: "Movies",
-        url: "https://streamex.sh/",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSle7Ty3fYukSEb34PF8XdLKCt_Y_9O9vN-JQ&s"
-    },
-    {
         title: "Redcoats.io",
         url: "https://redcoats.io/app",
         img: "https://images.twoplayergames.org/files/games/other/redcoast-io.jpg?auto=format&w=200"
@@ -228,15 +223,9 @@ const gameList = [
     }
 ];
 
-// SEARCH
+//search?
 
-const searchBar =
-    document.getElementById("searchBar");
-
-const games =
-    document.querySelectorAll(".game");
-
-searchBar.addEventListener("keyup", () => {
+function filterGames() {
 
     const text =
         searchBar.value.toLowerCase();
@@ -248,10 +237,46 @@ searchBar.addEventListener("keyup", () => {
             .textContent
             .toLowerCase();
 
+        const category =
+            game.dataset.category;
+
+        const searchMatch =
+            title.includes(text);
+
+        const categoryMatch =
+            currentCategory === "all" ||
+            category === currentCategory;
+
         game.style.display =
-            title.includes(text)
+            searchMatch && categoryMatch
             ? "block"
             : "none";
+
+    });
+
+}
+
+searchBar.addEventListener("keyup", filterGames);
+
+const categoryButtons =
+document.querySelectorAll(".category-btn");
+
+let currentCategory = "all";
+
+categoryButtons.forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+        categoryButtons.forEach(b =>
+            b.classList.remove("active")
+        );
+
+        btn.classList.add("active");
+
+        currentCategory =
+            btn.dataset.category;
+
+        filterGames();
 
     });
 
