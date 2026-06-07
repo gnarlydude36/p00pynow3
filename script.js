@@ -286,6 +286,9 @@ document.querySelectorAll(".category-btn");
 
 let currentCategory = "all";
 
+const gamesTitle =
+    document.getElementById("gamesTitle");
+
 categoryButtons.forEach(btn => {
 
     btn.addEventListener("click", () => {
@@ -298,6 +301,18 @@ categoryButtons.forEach(btn => {
 
         currentCategory =
             btn.dataset.category;
+
+        if (currentCategory === "all") {
+
+            gamesTitle.textContent =
+                "All Games";
+
+        } else {
+
+            gamesTitle.textContent =
+                btn.textContent.trim() + " Games";
+
+        }
 
         filterGames();
 
