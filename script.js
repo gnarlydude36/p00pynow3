@@ -1118,3 +1118,15 @@ window.addEventListener("resize", initLoadingCanvas);
 window.addEventListener("pointermove", onMove);
 
 window.addEventListener("click", onClick);
+
+function showGames() {
+    console.log("Games clicked");
+}
+
+function showChat() {
+    console.log("Chat clicked");
+}
+
+function showMovies() {
+    console.log("Movies clicked");
+}
