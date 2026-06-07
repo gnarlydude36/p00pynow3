@@ -248,6 +248,11 @@ function filterGames() {
         ? "grid"
         : "none";
 
+    hotRightNowTitle.style.display =
+    showFeatured
+    ? "block"
+    : "none";
+
     games.forEach(game => {
 
         const title =
