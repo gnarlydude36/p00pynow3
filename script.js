@@ -231,10 +231,22 @@ const searchBar =
 const games =
     document.querySelectorAll(".game");
 
+const featuredSection =
+    document.getElementById("featuredSection");
+
 function filterGames() {
 
     const text =
-        searchBar.value.toLowerCase();
+        searchBar.value.toLowerCase().trim();
+
+    let showFeatured =
+        text === "" &&
+        currentCategory === "all";
+
+    featuredSection.style.display =
+        showFeatured
+        ? "grid"
+        : "none";
 
     games.forEach(game => {
 
