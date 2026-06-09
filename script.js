@@ -1119,14 +1119,35 @@ window.addEventListener("pointermove", onMove);
 
 window.addEventListener("click", onClick);
 
-function showGames() {
-    console.log("Games clicked");
-}
+const DEFAULT_LOGO =
+    "https://i.imgur.com/aPaGxmn.png";
 
-function showChat() {
-    console.log("Chat clicked");
+const MOVIES_LOGO =
+    "https://i.imgur.com/BI3nSUb.png";
+
+const CHAT_LOGO =
+    "https://i.imgur.com/3MHEzIQ.png";
+
+function showGames() {
+
+    document.getElementById("siteLogo").src =
+        DEFAULT_LOGO;
+
+    console.log("Games page");
 }
 
 function showMovies() {
-    console.log("Movies clicked");
+
+    document.getElementById("siteLogo").src =
+        MOVIES_LOGO;
+
+    console.log("Movies page");
+}
+
+function showChat() {
+
+     document.getElementById("siteLogo").src =
+        CHAT_LOGO;
+
+    console.log("Chat page");
 }
