@@ -183,12 +183,14 @@ header {
 
 #searchBar,
 #movieSearchBar{
-    width:80%;
-    max-width:700px;
-    margin:20px auto;
-    display:block;
-    padding:14px;
-    border-radius:10px;
+     width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    background: #1f1f1f;
+    color: white;
+    font-size: 16px;
 }
 
 /* GAMES */
