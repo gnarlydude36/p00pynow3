@@ -1133,7 +1133,12 @@ function showGames() {
     document.getElementById("siteLogo").src =
         DEFAULT_LOGO;
 
-    console.log("Games page");
+    document.getElementById("moviesPage")
+        .style.display = "none";
+
+    document.getElementById("gamesPage")
+        .style.display = "block";
+
 }
 
 function showMovies() {
@@ -1141,7 +1146,12 @@ function showMovies() {
     document.getElementById("siteLogo").src =
         MOVIES_LOGO;
 
-    console.log("Movies page");
+    document.getElementById("gamesPage")
+        .style.display = "none";
+
+    document.getElementById("moviesPage")
+        .style.display = "block";
+
 }
 
 function showChat() {
