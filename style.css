@@ -706,20 +706,21 @@ header {
 }
 
 .movies-grid{
-
     display:grid;
-
     grid-template-columns:
-    repeat(auto-fit,minmax(300px,1fr));
+        repeat(auto-fill,minmax(220px,220px));
 
-    gap:25px;
+    justify-content:center;
+    gap:30px;
 }
 
 .movie-card{
 
+    width:220px;
+
     background:rgba(255,255,255,.05);
 
-    border-radius:18px;
+    border-radius:14px;
 
     overflow:hidden;
 
@@ -728,11 +729,15 @@ header {
     transition:.25s;
 
     border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
 }
 
 .movie-card:hover{
 
-    transform:translateY(-5px);
+    transform:
+        translateY(-6px)
+        scale(1.03);
 
     border-color:#00ffe1;
 }
@@ -741,14 +746,18 @@ header {
 
     width:100%;
 
-    height:180px;
+    aspect-ratio: 135 / 190;
 
     object-fit:cover;
+
+    display:block;
 }
 
 .movie-card h3{
 
-    padding:15px;
+    padding:12px;
 
     text-align:center;
+
+    font-size:16px;
 }
