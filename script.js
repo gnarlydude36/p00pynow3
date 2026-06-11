@@ -1161,3 +1161,84 @@ function showChat() {
 
     console.log("Chat page");
 }
+
+function launchMovie(title, url) {
+
+    document.getElementById("homeScreen")
+        .style.display = "none";
+
+    document.getElementById("moviePlayerScreen")
+        .style.display = "block";
+
+    document.getElementById("movieFrame")
+        .src = url;
+
+    document.getElementById("movieTitle")
+        .textContent = title;
+
+}
+
+function closeMovie() {
+
+    document.getElementById("moviePlayerScreen")
+        .style.display = "none";
+
+    document.getElementById("homeScreen")
+        .style.display = "block";
+
+    document.getElementById("movieFrame")
+        .src = "";
+
+}
+
+function fullscreenMovie() {
+
+    const iframe =
+        document.getElementById("movieFrame");
+
+    if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+    }
+
+}
+
+function openMovieBlank() {
+
+    const iframe =
+        document.getElementById("movieFrame");
+
+    const currentURL =
+        iframe.src;
+
+    if (!currentURL) return;
+
+    const win =
+        window.open(
+            "about:blank",
+            "_blank"
+        );
+
+    win.document.write(`
+    <!DOCTYPE html>
+    <html>
+    <body style="
+        margin:0;
+        overflow:hidden;
+        background:black;
+    ">
+        <iframe
+            src="${currentURL}"
+            style="
+                width:100vw;
+                height:100vh;
+                border:none;
+            "
+            allowfullscreen>
+        </iframe>
+    </body>
+    </html>
+    `);
+
+    win.document.close();
+
+}
