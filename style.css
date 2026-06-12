@@ -368,38 +368,6 @@ header {
     border: none;
 }
 
-/* ADS */
-.right-ad {
-    width: 170px;
-    height: 650px;
-
-    border-radius: 18px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: rgba(255,255,255,0.05);
-
-    border: 1px solid rgba(255,255,255,0.08);
-}
-
-.bottom-ad {
-    margin-top: 20px;
-
-    height: 110px;
-
-    border-radius: 18px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: rgba(255,255,255,0.05);
-
-    border: 1px solid rgba(255,255,255,0.08);
-}
-
 /* LOADING */
 #loadingScreen {
     position: fixed;
@@ -776,11 +744,6 @@ header {
     width: 100%;
 }
 
-.right-ad {
-    width: 180px;
-    min-width: 180px;
-}
-
 .game-frame-wrapper {
     height: calc(100vh - 250px);
 }
@@ -788,3 +751,58 @@ header {
 body {
     padding-top: 90px;
 }
+
+/* ads */
+.right-ad {
+    width: 220px;
+    min-width: 220px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #aaa;
+}
+
+.bottom-ad {
+    margin-top: 12px;
+
+    height: 100px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #aaa;
+}
+
+.left-sidebar {
+    width: 180px;
+}
+
+.right-ad {
+    width: 220px;
+}
+
+.center-player {
+    flex: 1;
+}
+
+.left-ad,
+.right-ad {
+    width: 220px;
+}
+
+
