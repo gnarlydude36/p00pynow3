@@ -1164,26 +1164,25 @@ function showChat() {
 
 function launchMovie(title, url) {
 
+    // Hide Movies page
     document.getElementById("moviesPage").style.display = "none";
+
+    // Show Movie Player
     document.getElementById("moviePlayerScreen").style.display = "block";
 
     document.getElementById("movieTitle").textContent = title;
     document.getElementById("movieFrame").src = url;
 
-    window.currentMovie = url;
+    currentMovie = url;
 }
 
 function closeMovie() {
 
-    document.getElementById("moviePlayerScreen")
-        .style.display = "none";
+    document.getElementById("moviePlayerScreen").style.display = "none";
 
-    document.getElementById("homeScreen")
-        .style.display = "block";
+    document.getElementById("moviesPage").style.display = "block";
 
-    document.getElementById("movieFrame")
-        .src = "";
-
+    document.getElementById("movieFrame").src = "";
 }
 
 function fullscreenMovie() {
