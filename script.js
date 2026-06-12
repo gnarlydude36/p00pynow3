@@ -1164,18 +1164,13 @@ function showChat() {
 
 function launchMovie(title, url) {
 
-    document.getElementById("homeScreen")
-        .style.display = "none";
+    document.getElementById("moviesPage").style.display = "none";
+    document.getElementById("moviePlayerScreen").style.display = "block";
 
-    document.getElementById("moviePlayerScreen")
-        .style.display = "block";
+    document.getElementById("movieTitle").textContent = title;
+    document.getElementById("movieFrame").src = url;
 
-    document.getElementById("movieFrame")
-        .src = url;
-
-    document.getElementById("movieTitle")
-        .textContent = title;
-
+    window.currentMovie = url;
 }
 
 function closeMovie() {
