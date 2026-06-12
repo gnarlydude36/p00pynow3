@@ -1164,21 +1164,22 @@ function showChat() {
 
 function launchMovie(title, url) {
 
-    // Hide Movies page
+    document.getElementById("mainHeader").style.display = "none";
+
     document.getElementById("moviesPage").style.display = "none";
 
-    // Show Movie Player
     document.getElementById("moviePlayerScreen").style.display = "block";
 
     document.getElementById("movieTitle").textContent = title;
     document.getElementById("movieFrame").src = url;
-
-    currentMovie = url;
 }
 
 function closeMovie() {
 
     document.getElementById("moviePlayerScreen").style.display = "none";
+
+    document.getElementById("mainHeader").style.display = "flex";
+    // use "block" instead if your header isn't flex
 
     document.getElementById("moviesPage").style.display = "block";
 
