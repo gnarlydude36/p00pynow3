@@ -250,25 +250,6 @@ header {
     padding: 20px;
 }
 
-/* LEFT SIDEBAR */
-.left-sidebar {
-    width: 180px;
-
-    background: rgba(255,255,255,0.05);
-
-    border: 1px solid rgba(255,255,255,0.08);
-
-    border-radius: 16px;
-
-    padding: 16px;
-
-    backdrop-filter: blur(10px);
-}
-
-.left-sidebar h2 {
-    margin-bottom: 20px;
-}
-
 .mini-games {
     display: flex;
     flex-direction: column;
@@ -754,56 +735,211 @@ body {
 }
 
 /* ads */
-.right-ad {
-    width: 220px;
-    min-width: 220px;
+/* ===========================
+   PLAYER LAYOUT
+=========================== */
 
-    background: rgba(255,255,255,0.05);
-
-    border: 1px solid rgba(255,255,255,0.1);
-
-    border-radius: 12px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: #aaa;
+.player-layout{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+    width:100%;
 }
 
-.bottom-ad {
-    margin-top: 12px;
+/* ===========================
+   LEFT SIDEBAR (Games)
+=========================== */
 
-    height: 100px;
+.left-sidebar{
+    width:220px;
+    min-width:220px;
 
-    background: rgba(255,255,255,0.05);
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:14px;
 
-    border: 1px solid rgba(255,255,255,0.1);
+    padding:18px;
 
-    border-radius: 12px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: #aaa;
+    backdrop-filter:blur(10px);
 }
 
-.left-sidebar {
-    width: 180px;
+.left-sidebar h2{
+    text-align:center;
+    font-size:22px;
 }
 
-.right-ad {
-    width: 220px;
+.mini-games{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
 
-.center-player {
-    flex: 1;
+.mini-games button{
+    background:#222;
+    color:white;
+
+    border:none;
+    border-radius:10px;
+
+    padding:12px;
+
+    cursor:pointer;
+
+    transition:.2s;
 }
+
+.mini-games button:hover{
+    background:#00ffe1;
+    color:#000;
+}
+
+/* ===========================
+   MOVIE LEFT AD
+=========================== */
 
 .left-ad,
-.right-ad {
-    width: 220px;
+.right-ad{
+
+    width:220px;
+    min-width:220px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:14px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#aaa;
+
+    font-size:22px;
+    font-weight:bold;
+
+    min-height:700px;
+
+    backdrop-filter:blur(10px);
+}
+
+/* ===========================
+   CENTER PLAYER
+=========================== */
+
+.center-player{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+}
+
+/* ===========================
+   TOP BAR
+=========================== */
+
+.top-controls{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:16px;
+}
+
+.game-title{
+
+    font-size:28px;
+    font-weight:bold;
+}
+
+.buttons{
+
+    display:flex;
+    gap:10px;
+}
+
+/* ===========================
+   PLAYER FRAME
+=========================== */
+
+.game-frame-wrapper{
+
+    width:100%;
+    height:calc(100vh - 220px);
+
+    background:#000;
+
+    border-radius:14px;
+
+    overflow:hidden;
+}
+
+#gameFrame,
+#movieFrame{
+
+    width:100%;
+    height:100%;
+
+    border:none;
+}
+
+/* ===========================
+   BOTTOM AD
+=========================== */
+
+.bottom-ad{
+
+    margin-top:20px;
+
+    height:100px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:14px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#aaa;
+
+    font-size:22px;
+    font-weight:bold;
+
+    backdrop-filter:blur(10px);
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:1100px){
+
+    .player-layout{
+
+        flex-direction:column;
+    }
+
+    .left-sidebar,
+    .left-ad,
+    .right-ad{
+
+        width:100%;
+        min-width:100%;
+        min-height:120px;
+    }
+
+    .game-frame-wrapper{
+
+        height:60vh;
+    }
 }
 
 
