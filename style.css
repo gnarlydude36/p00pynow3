@@ -735,16 +735,7 @@ body {
 }
 
 /* ads */
-/* ===========================
-   PLAYER LAYOUT
-=========================== */
 
-.player-layout{
-    display:flex;
-    gap:20px;
-    align-items:flex-start;
-    width:100%;
-}
 
 /* ===========================
    LEFT SIDEBAR (Games)
@@ -803,28 +794,29 @@ body {
 
 .left-ad,
 .right-ad{
+    width:220px !important;
+    height:700px !important;
 
-    width:220px;
-    min-width:220px;
-
-    background:rgba(255,255,255,.05);
-
-    border:1px solid rgba(255,255,255,.10);
-
-    border-radius:14px;
-
-    display:flex;
+    display:flex !important;
     justify-content:center;
     align-items:center;
 
-    color:#aaa;
+    background:red !important;
+    color:white !important;
 
-    font-size:22px;
-    font-weight:bold;
+    border:5px solid yellow !important;
 
-    min-height:700px;
+    flex:0 0 220px;
+}
 
-    backdrop-filter:blur(10px);
+/* ===========================
+   PLAYER LAYOUT
+=========================== */
+
+.player-layout{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
 }
 
 /* ===========================
