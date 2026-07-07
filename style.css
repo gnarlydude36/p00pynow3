@@ -744,7 +744,7 @@ body {
 .left-sidebar{
     width:220px;
     min-width:220px;
-    height:700px
+    height:700px;
 
     background:rgba(255,255,255,.05);
     border:1px solid rgba(255,255,255,.10);
