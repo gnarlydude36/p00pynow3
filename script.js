@@ -3,7 +3,7 @@
                     */
 
 const loadingMessages = [
-    "Loading the Cantina™ Crispy Chicken Taco Luxe Box with extra Avacado Verde Salsa and a Mug™ Root Beer order from Taco Bell™" 
+    "Loading the Cantina™ Crispy Chicken Taco Luxe Box with extra Avacado Verde Salsa and a Mug™ Root Beer order from Taco Bell™...", 
     "Loading awesome-ish games...",
     "Fixing a LOT of bugs...",
     "Making Things actually work...",
@@ -13,9 +13,9 @@ const loadingMessages = [
     "Visiting Your Mother...",
     "Making squares float...", 
     "Gnarly Dude and Kynd Dude Bro Yay...",
-    "Loading Something idk..."
-    "The movies aren't pirated, okay..."
-    "WILLLLSSSOOOOOOOOOOOOONNNNNNNNN!!!"
+    "Loading Something idk...",
+    "The movies aren't pirated, okay...",
+    "WILLLLSSSOOOOOOOOOOOOONNNNNNNNN!!!",
     "Loading the pain I went through to make this website for you..."
 ];
 
