@@ -1,7 +1,6 @@
-// LOADING SCREEN
+/* LOADING SCREEN
 
-const loadingMessages = [
-    "Loading awesome-ish games...",
+ "Loading awesome-ish games...",
     "Fixing a LOT of bugs...",
     "Making Things actually work...",
     "Eaglercraft GOAT...",
@@ -10,7 +9,10 @@ const loadingMessages = [
     "Visiting Your Mother...",
     "Making squares float...", 
     "Gnarly Dude and Kynd Dude Bro Yay...",
-    "Loading Something idk..."
+    "Loading Something idk..."     */
+
+const loadingMessages = [
+    "You ever had the Cantina Crispy Chicken Taco Luxe Box with extra Avacado Verde Salsa and a Mug Root Beer?"
 ];
 
 const randomMessage =
