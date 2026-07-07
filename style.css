@@ -802,16 +802,20 @@ body {
     justify-content:center;
     align-items:center;
 
-    background:red;
-    color:white;
+    background:rgba(255,255,255,.05);
 
-    border:5px solid yellow;
+    border:1px solid rgba(255,255,255,.10);
 
-    flex:0 0 220px;
+    font-size:22px;
+    font-weight:bold;
+
+    backdrop-filter:blur(10px);
+    
+   
 }
 
 /* ===========================
-   PLAYER LAYOUT
+   PLAYER LAYOUT    flex:0 0 220px;
 =========================== */
 
 .player-layout{
