@@ -744,6 +744,7 @@ body {
 .left-sidebar{
     width:220px;
     min-width:220px;
+    height:700px
 
     background:rgba(255,255,255,.05);
     border:1px solid rgba(255,255,255,.10);
@@ -794,17 +795,17 @@ body {
 
 .left-ad,
 .right-ad{
-    width:220px !important;
-    height:700px !important;
+    width:220px;
+    height:700px;
 
-    display:flex !important;
+    display:flex;
     justify-content:center;
     align-items:center;
 
-    background:red !important;
-    color:white !important;
+    background:red;
+    color:white;
 
-    border:5px solid yellow !important;
+    border:5px solid yellow;
 
     flex:0 0 220px;
 }
