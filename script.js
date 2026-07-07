@@ -1,6 +1,10 @@
-/* LOADING SCREEN
+/* LOADING SCREEN 
 
- "Loading awesome-ish games...",
+                    */
+
+const loadingMessages = [
+    "Loading the Cantina™ Crispy Chicken Taco Luxe Box with extra Avacado Verde Salsa and a Mug™ Root Beer order from Taco Bell™" 
+    "Loading awesome-ish games...",
     "Fixing a LOT of bugs...",
     "Making Things actually work...",
     "Eaglercraft GOAT...",
@@ -9,10 +13,10 @@
     "Visiting Your Mother...",
     "Making squares float...", 
     "Gnarly Dude and Kynd Dude Bro Yay...",
-    "Loading Something idk..."     */
-
-const loadingMessages = [
-    "You ever had the Cantina Crispy Chicken Taco Luxe Box with extra Avacado Verde Salsa and a Mug Root Beer?"
+    "Loading Something idk..."
+    "The movies aren't pirated, okay..."
+    "WILLLLSSSOOOOOOOOOOOOONNNNNNNNN!!!"
+    "Loading the pain I went through to make this website for you..."
 ];
 
 const randomMessage =
@@ -106,7 +110,7 @@ const gameList = [
     {
         title: "BuildNow GG",
         url: "https://soulpeacemind.com/games/buildnow-gg-gpotty/",
-        img: "https://geometrylitegame.io/data/image/game/buildnow-gg/buildnow-gg.webp"
+        img: "https://scout.wgimager.com/f_webp/w_420/q_90/https://agaronline.io/data/image/game/buildnow-gg.png"
     },
     {
         title: "Striker Dummies",
