@@ -687,7 +687,7 @@ const featuredGames = [
     {
         title: "BuildNow GG",
         url: "https://soulpeacemind.com/games/buildnow-gg-gpotty/",
-        img: "https://geometrylitegame.io/data/image/game/buildnow-gg/buildnow-gg.webp"
+        img: "https://scout.wgimager.com/f_webp/w_420/q_90/https://agaronline.io/data/image/game/buildnow-gg.png"
     }
 
 ];
