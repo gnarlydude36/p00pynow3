@@ -6,4 +6,6 @@ Fun gaming website hosted through Netlify rn
  -cool galaxy themed background
  -cloakable games
  -public chat (soon)
- -catergories (soon)
+ -catergories
+ -decent movie/media catergory
+ -
