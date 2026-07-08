@@ -13,6 +13,8 @@ const loadingMessages = [
     "Visiting Your Mother...",
     "Making squares float...", 
     "Gnarly Dude and Kynd Dude Bro Yay...",
+    "Loading the 100% ''real'' loading screen...",
+    "Loading Tip: I ain't adding games to the other games section any more...",
     "Loading Something idk...",
     "The movies aren't pirated, okay...",
     "WILLLLSSSOOOOOOOOOOOOONNNNNNNNN!!!",
@@ -73,9 +75,9 @@ const gameList = [
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSFqcr2j13ttx6euqDNDh8PebcLlPlTiL1w&s"
     },
     {
-        title: "Rail in The Air",
-        url: "https://gamulo.com/wp-content/uploads/2025/game/Rail-in-the-Air.html",
-        img: "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/0ac52582b500eefc23b6df0e0d35cfe8/rail-in-the-air-logo.png"
+        title: "Ragdoll Archers",
+        url: "https://ragdollarchers2.io/ragdoll-archers.embed",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq1LT4-60bQ_wPuPkRQtk4eseSEnQzfy-FXEiK3ov_IQ&s=10"
     },
     {
         title: "Watermelon Merge",
@@ -103,9 +105,9 @@ const gameList = [
         img: "https://mazean.com/data/512x512.png"
     },
     {
-        title: "Tribals.io Survival",
-        url: "https://webecomewhatwebehold.online/tribalsio.embed",
-        img: "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/a70806db5d8812ac66118f99dc8e590c/tribals-io-logo.png"
+        title: "Murder",
+        url: "https://77pen.github.io/p5/murder/",
+        img: "https://play-lh.googleusercontent.com/fRvbLcYY7D8BpTLu9sZavlMwznHEQgN7R3r7pBfnzUcW0vMn8cDo5tdOZDd-Aob_euCtFbKi6vfAvb551YMIdQ"
     },
     {
         title: "BuildNow GG",
@@ -128,9 +130,9 @@ const gameList = [
         img: "https://www.coolmathgames.com/sites/default/files/2048_OG-logo.jpg"
     },
     {
-        title: "Pac-Man",
-        url: "https://freepacman.org/",
-        img: "https://i0.wp.com/gamingrespawn.com/wp-content/uploads/2021/04/Pac-Man.png?fit=960%2C720&ssl=1"
+        title: "Ragdoll Hit",
+        url: "https://ragdollhit2.org/ragdoll-hit.embed",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWT6el1UZ5J7KyAWqVy1GGtxZhaxgNYfREVx-nZM6oxg&s=10"
     },
     {
         title: "Smash Carts",
