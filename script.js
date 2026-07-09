@@ -1108,6 +1108,21 @@ function onClick(e) {
 
 }
 
+/*xudfjivbaseuvbiasvbjh*/
+const logo = document.getElementById("siteLogo");
+
+function setLogoGlow(page) {
+
+    logo.classList.remove(
+        "logo-games",
+        "logo-movies",
+        "logo-chat"
+    );
+
+    logo.classList.add("logo-" + page);
+
+}
+
 window.addEventListener("DOMContentLoaded", () => {
 
   initLoadingCanvas();
@@ -1147,6 +1162,8 @@ function showGames() {
     document.getElementById("gamesPage")
         .style.display = "block";
 
+  setLogoGlow("games");
+
 }
 
 function showMovies() {
@@ -1160,6 +1177,8 @@ function showMovies() {
     document.getElementById("moviesPage")
         .style.display = "block";
 
+  setLogoGlow("movies");
+
 }
 
 function showChat() {
@@ -1168,6 +1187,9 @@ function showChat() {
         CHAT_LOGO;
 
     console.log("Chat page");
+
+  setLogoGlow("chat");
+  
 }
 
 function launchMovie(title, url) {
